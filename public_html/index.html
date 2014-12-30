@@ -1,47 +1,72 @@
 <!DOCTYPE html>
-<html class="ui-mobile-rendering">
+<html>
 <head>
-    <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css"  >
 </head>
 
 <body>
-<div id="home" data-role="page">
-    <div data-position="fixed" data-role="header">
-    <div data-role="navbar">
-      <ul>
-        <li>
-          <a data-icon="home"></a>
-        </li>
-        <li>
-          <a data-icon="star"></a>
-        </li>
-        <li>
-          <a data-icon="heart"></a>
-        </li>
-        <li>
-          <a data-icon="star"></a>
-        </li>        
-      </ul>
-    </div>
+<div id="GameZone"> 
+
+</div>
+<div id="SocialZone"> 
+  <table id="ChatUsrListTbldUI" > 
+    <thead> 
+      <tr> 
+        <th style="width: 90px">User Name</th> 
+        <th style="width: 60px">Rate</th> 
+        <th style="width: 60px">Game</th> 
+        <th style="width: auto"></th> 
+      </tr> 
+    </thead> 
+      <tr> 
+        <td>Yvan</td> 
+        <td>1500</td> 
+        <td></td> 
+        <td></td> 
+      </tr> 
+      <tr> 
+        <td>Marc</td> 
+        <td>1500</td> 
+        <td></td> 
+        <td></td>                 
+      </tr> 
+      <tr> 
+        <td>tahito</td> 
+        <td>1500</td> 
+        <td></td> 
+        <td></td>                 
+      </tr>               
+  </table>
+<div id="TchatZone">
+  <div id="MsgListWrapper">
+    <ul id="MsgList">
+      <li><span class="pseudo admin">Yvan</span> <span class="dateTime">à 10:12</span> Salut ! </li>
+      <li><span class="pseudo player">tahito</span><span class="dateTime">à 10:12</span> blalalaaalzlz :)</li>
+      <li><span class="pseudo player">Marc</span> <span class="dateTime">à 10:12</span> hop hopo ho </li>
+      <li><span class="pseudo admin">Yvan</span> <span class="dateTime">à 10:12</span> aahh mais non  </li>
+      <li><span class="pseudo player">tahito</span> <span class="dateTime">à 10:12</span> mais si !!! :D</li>
+      <li><span class="pseudo admin">Yvan</span> <span class="dateTime">à 10:12</span> Salut ! </li>
+      <li><span class="pseudo player">tahito</span><span class="dateTime">à 10:12</span> blalalaaalzlz :)</li>
+      <li><span class="pseudo player">Marc</span> <span class="dateTime">à 10:12</span> hop hopo ho </li>
+      <li><span class="pseudo admin">Yvan</span> <span class="dateTime">à 10:12</span> aahh mais non  </li>
+      <li><span class="pseudo player">tahito</span> <span class="dateTime">à 10:12</span> mais si !!! :D</li>
+      <li><span class="pseudo admin">Yvan</span> <span class="dateTime">à 10:12</span> Salut ! </li>
+      <li><span class="pseudo player">tahito</span><span class="dateTime">à 10:12</span> blalalaaalzlz :)</li>
+      <li><span class="pseudo player">Marc</span> <span class="dateTime">à 10:12</span> hop hopo ho </li>
+      <li><span class="pseudo admin">Yvan</span> <span class="dateTime">à 10:12</span> aahh mais non  </li>
+      <li><span class="pseudo player">tahito</span> <span class="dateTime">à 10:12</span> mais si !!! :D</li>
+     </ul>
   </div>
-  <div data-position="fixed" data-role="footer">
-    <div data-role="navbar">
-      <ul>
-        <li>
-          <a data-icon="home"></a>
-        </li>
-        <li>
-          <a data-icon="star"></a>
-        </li>
-      </ul>
-    </div>
-  </div>
+  <form id="MsgZone" action="#" class="ajaxInterceptionPost">
+    <textarea id="Message" name="msg"></textarea>
+    <input type="submit" id="Submit" value="Envoyer" />
+  </form>
+</div>
 </div>
 <!-- The Scripts -->
 <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 
